@@ -9,7 +9,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 5
+;;     Update #: 6
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -96,7 +96,7 @@
            org-refile-use-outline-path 'file
            ;; Targets complete in steps so we start with filename, TAB shows the next level of targets etc
            org-outline-path-complete-in-steps t
-           org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d!/!)")
+           org-todo-keywords '((sequence "TODO(t)" "STARTED(s!)" "|" "DONE(d!/!)")
                                (sequence "WAITING(w@/!)" "SOMEDAY(S)" "PROJECT(P@)" "|" "CANCELLED(c@/!)")))
      ))
 

@@ -3,7 +3,7 @@
 (require 'easy-utils)
 
 (add-auto-mode 'mail-mode "/mutt-sydi-[-0-9]+$")
-(setq user-full-name "Shi Yudi")
+(setq user-full-name "fangji")
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 
                                         ;show ascii table
@@ -55,36 +55,36 @@
 (setq magit-auto-revert-mode nil)
 
 ;; my personal gcc
-(setq-default flycheck-c/c++-gcc-executable "/home/fufeng.syd/.local/bin/gcc")
-(setq-default flycheck-gcc-args '("-D__STDC_LIMIT_MACROS"
-                                  "-DSTDC_HEADERS=1"
-                                  "-DHAVE_SYS_TYPES_H=1"
-                                  "-DHAVE_SYS_STAT_H=1"
-                                  "-DHAVE_STDLIB_H=1"
-                                  "-DHAVE_STRING_H=1"
-                                  "-DHAVE_MEMORY_H=1"
-                                  "-DHAVE_STRINGS_H=1"
-                                  "-DHAVE_INTTYPES_H=1"
-                                  "-DHAVE_STDINT_H=1"
-                                  "-DHAVE_UNISTD_H=1"
-                                  "-DHAVE_DLFCN_H=1"
-                                  "-I."
-                                  "-I/home/fufeng.syd/code/dev/src/observer"
-                                  "-I/home/fufeng.syd/ins/tblib/include/tbsys"
-                                  "-I/home/fufeng.syd/ins/easy/include/easy"
-                                  "-I/home/fufeng.syd/code/dev/include"
-                                  "-I/home/fufeng.syd/code/dev/src"
-                                  "-Wall"
-                                  "-Werror"
-                                  "-Wextra"
-                                  "-Wunused-parameter"
-                                  "-Wformat"
-                                  "-Wconversion"
-                                  "-Wno-deprecated"
-                                  "-fno-strict-aliasing"
-                                  "-I/usr/include""-I/usr/include/mysql"
-                                  ))
-
+;;(setq-default flycheck-c/c++-gcc-executable "/home/fufeng.syd/.local/bin/gcc")
+;;(setq-default flycheck-gcc-args '("-D__STDC_LIMIT_MACROS"
+;;                                  "-DSTDC_HEADERS=1"
+;;                                  "-DHAVE_SYS_TYPES_H=1"
+;;                                  "-DHAVE_SYS_STAT_H=1"
+;;                                  "-DHAVE_STDLIB_H=1"
+;;                                  "-DHAVE_STRING_H=1"
+;;                                  "-DHAVE_MEMORY_H=1"
+;;                                  "-DHAVE_STRINGS_H=1"
+;;                                  "-DHAVE_INTTYPES_H=1"
+;;                                  "-DHAVE_STDINT_H=1"
+;;                                  "-DHAVE_UNISTD_H=1"
+;;                                  "-DHAVE_DLFCN_H=1"
+;;                                  "-I."
+;;                                  "-I/home/fufeng.syd/code/dev/src/observer"
+;;                                  "-I/home/fufeng.syd/ins/tblib/include/tbsys"
+;;                                  "-I/home/fufeng.syd/ins/easy/include/easy"
+;;                                  "-I/home/fufeng.syd/code/dev/include"
+;;                                  "-I/home/fufeng.syd/code/dev/src"
+;;                                  "-Wall"
+;;                                  "-Werror"
+;;                                  "-Wextra"
+;;                                  "-Wunused-parameter"
+;;                                  "-Wformat"
+;;                                  "-Wconversion"
+;;                                  "-Wno-deprecated"
+;;                                  "-fno-strict-aliasing"
+;;                                  "-I/usr/include""-I/usr/include/mysql"
+;;                                  ))
+;;
 ;; (defadvice flymake-find-buildfile
 ;;     (around advice-find-makefile-separate-obj-dir
 ;;             activate compile)
@@ -108,6 +108,5 @@
 ;;              (blddir (concat (file-name-as-directory project-build-root) subdir)))
 ;;         (locate-dominating-file blddir "Makefile"))
 ;;     (error source-dir)))
-
 (provide 'init-misc)
 ;;; init-misc.el ends here
