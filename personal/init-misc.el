@@ -108,5 +108,6 @@
 ;;              (blddir (concat (file-name-as-directory project-build-root) subdir)))
 ;;         (locate-dominating-file blddir "Makefile"))
 ;;     (error source-dir)))
+(setq prelude-flyspell nil)
 (provide 'init-misc)
 ;;; init-misc.el ends here
