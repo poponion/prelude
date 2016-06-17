@@ -9,7 +9,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 6
+;;     Update #: 16
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -57,9 +57,9 @@
      (require 'org-clock)
 
      (require 'org-checklist)
-     (require 'org-fstree)
-     (setq org-ditaa-jar-path
-           (expand-file-name "~/.emacs.d/elpa/contrib/scripts/ditaa.jar"))
+     ;(require 'org-fstree)
+     ;;(setq org-ditaa-jar-path
+     ;;      (expand-file-name "~/.emacs.d/elpa/contrib/scripts/ditaa.jar"))
      (add-hook 'org-mode-hook 'soft-wrap-lines)
      (defun soft-wrap-lines ()
        "Make lines wrap at window edge and on word boundary,

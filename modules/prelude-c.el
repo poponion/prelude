@@ -78,7 +78,7 @@ Default build directory is set as 'build'.
 
   (ggtags-mode 1)
 
-  (new-oceanbase-style)
+  ;(new-oceanbase-style)
 
   ;; make the ENTER key indent next line properly
   (local-set-key "\C-m" 'newline-and-indent)
