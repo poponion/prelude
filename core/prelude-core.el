@@ -247,5 +247,5 @@ of FILE in the current directory, suitable for creation"
                        if (equal d root)
                        return nil))))
 
-o(provide 'prelude-core)
+(provide 'prelude-core)
 ;;; prelude-core.el ends here
