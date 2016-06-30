@@ -2,5 +2,5 @@
 # name: ret
 # key: ret
 # --
-int ret = OB_SUCCESS;
+int ret = TA_FUNC_OK
 $0$>
