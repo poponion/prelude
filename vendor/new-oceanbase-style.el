@@ -31,7 +31,7 @@
 (defconst new-oceanbase-cpp-style
   `((c-recognize-knr-p . nil)
     (c-enable-xemacs-performance-kludge-p . t) ; speed up indentation in XEmacs
-    (c-basic-offset . 2)
+    (c-basic-offset . 4)
     (indent-tabs-mode . nil)
     (c-comment-only-line-offset . 0)
     ;; will overlapped by smartparens
@@ -86,21 +86,21 @@
                          (,(when (fboundp 'c-no-indent-after-java-annotations)
                              'c-no-indent-after-java-annotations)
                           ,(when (fboundp 'c-lineup-assignments)
-                             'c-lineup-assignments)
+                             'c-lineup-Assignments)
                           ++))
                         (label . 0)
                         (case-label . +)
                         (statement-case-open . +)
                         (statement-case-intro . +) ; case w/o {
                         (access-label . -)
-                        (innamespace . 0))))
+                        (innamespace . +))))
   "The new OceanBase C/C++ Programming Style.")
 
 ;;;###autoload
-;(defun new-oceanbase-style ()
-;  "Set `new-oceanbase-style' as your cpp programming style."
-;  (interactive)
-;  (c-add-style "new-oceanbase" new-oceanbase-cpp-style t))
+(defun new-oceanbase-style ()
+  "Set `new-oceanbase-style' as your cpp programming style."
+  (interactive)
+  (c-add-style "new-oceanbase" new-oceanbase-cpp-style t))
 
 (provide 'new-oceanbase-style)
 ;;; new-oceanbase-style.el ends here

@@ -3,6 +3,6 @@
 # key: ifs
 # binding: direct-keybinding
 # --
-if (OB_SUCCESS == ret) {
+if (UPDATE_OK(ret)) {
   $0
 }

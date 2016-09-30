@@ -2,7 +2,6 @@
 # name: namespace
 # key: ns
 # --
-namespace ${1:Namespace}
-{
+namespace ${1:Namespace} {
   `yas/selected-text`$0
-} // end of namespace $1
+}  // end of namespace $1

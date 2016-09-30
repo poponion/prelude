@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: uret
+# key: uret
+# --
+UpdateErrorCode ret = UpdateErrorCode::SUCCESS;
+$0$>

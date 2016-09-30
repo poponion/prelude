@@ -1,7 +1,7 @@
 ;;; Code:
 
 (require 'easy-utils)
-
+(setq projectile-enable-caching t)
 (add-auto-mode 'mail-mode "/mutt-sydi-[-0-9]+$")
 (setq user-full-name "fangji")
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)

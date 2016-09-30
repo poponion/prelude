@@ -34,7 +34,7 @@
 
 (require 'prelude-programming)
 (require 'new-oceanbase-style)
-
+(require 'google-c-style)
 (defun ryzn/get-real-builddir (&optional upper)
   "Get relative object path of source code directory.
 Default build directory is set as 'build'.
@@ -60,6 +60,10 @@ Default build directory is set as 'build'.
   (let ((default-directory (ryzn/get-real-builddir upper)))
     (compile "make -s -j10 LIBTOOLFLAGS=--silent")))
 
+(defun fangji/build()
+    """compile default geabase"""
+    (compile "cd /home/fangji.hcm/code/geabase; scons debug=1 -j10"))
+
 ;; C/C++ SECTION
 (defun sydi/c++-mode-hook()
   ;; @see http://stackoverflow.com/questions/3509919/ \
@@ -78,13 +82,13 @@ Default build directory is set as 'build'.
 
   (ggtags-mode 1)
 
-  ;(new-oceanbase-style)
-
+  ;;(google-c-style)
+  (new-oceanbase-style)
   ;; make the ENTER key indent next line properly
   (local-set-key "\C-m" 'newline-and-indent)
   (local-set-key (kbd "RET") 'newline-and-indent)
 
-  (local-set-key (kbd "M-`") 'ryzn/build)
+  (local-set-key (kbd "M-`") 'fangji/build)
   (local-set-key (kbd "M-~") 'recompile)
 
   (sydi/company-cc-mode-setup)
