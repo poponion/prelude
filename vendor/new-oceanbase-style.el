@@ -93,14 +93,14 @@
                         (statement-case-open . +)
                         (statement-case-intro . +) ; case w/o {
                         (access-label . -)
-                        (innamespace . 0))))
+                        (innamespace . +))))
   "The new OceanBase C/C++ Programming Style.")
 
 ;;;###autoload
-;(defun new-oceanbase-style ()
-;  "Set `new-oceanbase-style' as your cpp programming style."
-;  (interactive)
-;  (c-add-style "new-oceanbase" new-oceanbase-cpp-style t))
+(defun new-oceanbase-style ()
+  "Set `new-oceanbase-style' as your cpp programming style."
+  (interactive)
+  (c-add-style "new-oceanbase" new-oceanbase-cpp-style t))
 
 (provide 'new-oceanbase-style)
 ;;; new-oceanbase-style.el ends here
