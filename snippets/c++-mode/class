@@ -1,7 +1,6 @@
 # -*- mode: snippet -*-
 # name: class
 # key: cls
-# contributor: Shi Yudi<a@sydi.org>
 # --
 class ${1:`(replace-regexp-in-string "_\\|\\.H" "" (upcase-initials (file-name-nondirectory (file-name-sans-extension (buffer-file-name)))))`} {
 public:
