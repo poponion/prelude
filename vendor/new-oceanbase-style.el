@@ -93,7 +93,7 @@
                         (statement-case-open . +)
                         (statement-case-intro . +) ; case w/o {
                         (access-label . -)
-                        (innamespace . +))))
+                        (innamespace . 0))))
   "The new OceanBase C/C++ Programming Style.")
 
 ;;;###autoload
