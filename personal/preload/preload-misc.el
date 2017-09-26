@@ -3,5 +3,12 @@
 (defun compile-geabase ()
 "compile Geabase in default dir"
 (interactive)
-(compile "cd /home/fangji.hcm/code/geabase && scons -j24 --warn=no-duplicate-environment"))
+(compile "cd /home/fangji.hcm/code/geabase && scons -j24 target=7u2 --warn=no-duplicate-environment"))
 (global-set-key (kbd "C-x ,") 'compile-geabase)
+
+(defun compile-project (project)
+  "compile project in default dir"
+  (interactive "s ProjectName:")
+  (setq cmd (concat "cd /home/fangji.hcm/code/" project))
+  (compile (concat cmd " && scons -j24")))
+(global-set-key (kbd "C-x /") 'compile-project)
