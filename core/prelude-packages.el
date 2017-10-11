@@ -41,6 +41,8 @@
              '("SC" . "http://joseito.republika.pl/sunrise-commander/") t)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives
+             '("SC"   . "http://joseito.republika.pl/sunrise-commander/") t)
 
 ;; set package-user-dir to be relative to Prelude install path
 (setq package-user-dir (expand-file-name "elpa" prelude-dir))
