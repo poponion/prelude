@@ -9,6 +9,7 @@
 (defun compile-project (project)
   "compile project in default dir"
   (interactive "s ProjectName:")
-  (setq cmd (concat "cd /home/fangji.hcm/code/" project))
-  (compile (concat cmd " && scons -j24")))
+  (if (= 0 (string-bytes project))
+      (setq project "nbtm"))
+  (compile (concat "cd /home/fangji.hcm/code/" project " && scons -j24")))
 (global-set-key (kbd "C-x /") 'compile-project)

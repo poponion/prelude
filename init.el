@@ -103,11 +103,10 @@ by Prelude.")
   (mapc 'load (directory-files prelude-personal-preload-dir 't "^[^#].*el$")))
 
 (message "Loading Prelude's core...")
-
 ;; the core stuff
 (require 'prelude-packages)
 (require 'prelude-custom)  ;; Needs to be loaded before core, editor and ui
-(require 'prelude-ui)
+;(require 'prelude-ui)
 (require 'prelude-core)
 (require 'prelude-mode)
 (require 'prelude-editor)
