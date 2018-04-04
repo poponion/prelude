@@ -35,6 +35,7 @@
 (require 'prelude-programming)
 (require 'new-oceanbase-style)
 (require 'google-c-style)
+(require 'geabase-style)
 (defun ryzn/get-real-builddir (&optional upper)
   "Get relative object path of source code directory.
 Default build directory is set as 'build'.
@@ -83,8 +84,8 @@ Default build directory is set as 'build'.
 
   (ggtags-mode 1)
 
-
   ;;(new-oceanbase-style)
+  (geabase-style)
   ;; make the ENTER key indent next line properly
   (local-set-key "\C-m" 'newline-and-indent)
   (local-set-key (kbd "RET") 'newline-and-indent)
