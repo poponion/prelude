@@ -86,7 +86,7 @@
     org org-journal
     ox-reveal
     org-plus-contrib
-    org-fstree
+    ;org-fstree
     ggtags
     header2
     sunrise-commander
