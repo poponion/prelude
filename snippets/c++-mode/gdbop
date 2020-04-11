@@ -1,0 +1,31 @@
+# -*- mode: snippet -*-
+# name: gdbop
+# key: gdbop
+# --
+    virtual int32_t getChildNum() override const {
+        return 0;
+    }
+
+    virtual GDBOperatorType getOperatorType() override const {
+        return ;
+    }
+
+    virtual GDBErrorCode setChild(int32_t index, const GDBOperator* op) override {
+
+    }
+
+    virtual GDBOperator* getChild(int32_t index) override {
+
+    }
+
+    virtual GDBErrorCode open() override;
+
+    virtual GDBErrorCode close() override;
+
+    virtual GDBErrorCode getNextRow(const GDBRow*& row) override;
+
+    // print operator tree into buf
+    virtual int64_t toString(char* buf, const int64_t bufLen) override const;
+
+    // encode/decode related
+    VIRTUAL_ENCODE_AND_DECODE;

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: gdbr
+# key: gdbr
+# --
+GDBErrorCode ret = GDBErrorCode::GDB_SUCCEED;
+return ret;
