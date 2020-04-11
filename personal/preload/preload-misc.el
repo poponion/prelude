@@ -13,3 +13,12 @@
       (setq project "nbtm"))
   (compile (concat "cd /home/fangji.hcm/code/" project " && scons -j24")))
 (global-set-key (kbd "C-x /") 'compile-project)
+
+(add-to-list 'package-archives
+             '("melpa-cn" . "http://elpa.emacs-china.org/melpa/") t)
+(add-to-list 'package-archives
+             '("gun-cn" . "http://elpa.emacs-china.org/gnu/") t)
+(require 'eglot)
+(add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
+(add-hook 'c-mode-hook 'eglot-ensure)
+(add-hook 'c++-mode-hook 'eglot-ensure)

@@ -35,14 +35,18 @@
 (require 'cl)
 (require 'package)
 
+;(add-to-list 'package-archives
+;             '("org" . "http://orgmode.org/elpa/") t)
+;(add-to-list 'package-archives
+;             '("SC" . "http://joseito.republika.pl/sunrise-commander/") t)
 (add-to-list 'package-archives
-             '("org" . "http://orgmode.org/elpa/") t)
+             '("melpa-cn" . "http://elpa.emacs-china.org/melpa/") t)
 (add-to-list 'package-archives
-             '("SC" . "http://joseito.republika.pl/sunrise-commander/") t)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
-(add-to-list 'package-archives
-             '("SC"   . "http://joseito.republika.pl/sunrise-commander/") t)
+             '("gun-cn" . "http://elpa.emacs-china.org/gnu/") t)
+;(add-to-list 'package-archives
+;             '("melpa" . "https://melpa.org/packages/") t)
+;(add-to-list 'package-archives
+;             '("SC"   . "http://joseito.republika.pl/sunrise-commander/") t)
 
 ;; set package-user-dir to be relative to Prelude install path
 (setq package-user-dir (expand-file-name "elpa" prelude-dir))
